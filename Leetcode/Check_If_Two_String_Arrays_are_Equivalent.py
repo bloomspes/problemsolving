@@ -6,4 +6,4 @@ class Solution:
         if (a == b):
             return True
         else:
-            False
+            return False
