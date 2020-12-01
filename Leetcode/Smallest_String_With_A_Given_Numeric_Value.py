@@ -24,5 +24,5 @@ class Solution:
             dict_value = min(k, 25)
             list[i] = chr(dict_value + 97)
             k = k - dict_value
-            print(list)
+
         return ''.join(list)
