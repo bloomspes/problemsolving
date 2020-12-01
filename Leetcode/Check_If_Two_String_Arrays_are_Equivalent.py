@@ -1,12 +1,9 @@
 class Solution:
     def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
-        word1 = []
-        word2 = []
+        a = "".join(word1)
+        b = "".join(word2)
 
-        word1_sum = sum(word1)
-        word2_sum = sum(word2)
-
-        if (word1_sum == word2_sum):
+        if (a == b):
             return True
         else:
-            return False
+            False
