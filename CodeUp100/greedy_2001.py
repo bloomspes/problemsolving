@@ -1,12 +1,7 @@
-pasta_1 = int(input())
-pasta_2 = int(input())
-pasta_3 = int(input())
+a, b, c, d, e = int(input())
 
-juice_1 = int(input())
-juice_2 = int(input())
+get_min_pasta = min(a, b, c)
+get_min_juice = min(d, e)
 
-cheapest_pasta = min(pasta_1, pasta_2, pasta_3)
-cheapest_juice = min(juice_1, juice_2)
-
-result = (cheapest_juice + cheapest_pasta) * 1.1
+result = (get_min_pasta + get_min_juice) * 1.1
 print("%.1f" % result)
