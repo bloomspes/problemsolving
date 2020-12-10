@@ -3,3 +3,7 @@
 
 class Solution:
     def minMoves(self, nums: List[int], limit: int) -> int:
+        ans = []
+
+        for i in range(len(nums) // 2):
+            moves = min(nums[i])
