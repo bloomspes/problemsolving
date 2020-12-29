@@ -3,7 +3,6 @@
 # 내가 있는 인덱스를 기준으로 해서 sum을 최대화 하려면 다음 인덱스의 값이 가장 큰 것으로 이동해야 된다.
 # 파이썬 내장 모듈인 heapq 사용
 
-from collections import deque
 import heapq
 
 #      1  ---> root
