@@ -13,11 +13,11 @@ class Solution:
         number = re.sub('[ -]', '', number)
         ans = ""
 
-        while len(number) > 3:
-            ans += number[0:2] + "-"
-            number = number[2:]
+        while len(number) > 4:
+            ans += number[0:3] + "-"
+            number = number[3:]
 
-        if len(number) == 3:
+        if len(number) == 4:
             ans += number[:2] + "-" + number[2:]
 
         else:
