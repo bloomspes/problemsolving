@@ -12,6 +12,7 @@
 # 두 횟수가 같은 경우에 bool값 리턴해주면 끝.
 
 # 시간복잡도 : O(n) / 공간복잡도: O(1)
+
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
         vowel = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
