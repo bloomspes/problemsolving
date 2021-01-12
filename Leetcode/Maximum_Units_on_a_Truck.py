@@ -10,13 +10,13 @@ class Solution:
         boxTypes.sort(key=lambda x: -x[-1])
         unit = 0
 
-        for i, j in enumerate(boxTypes):
-            if boxTypes[i][0] <= truckSize:
-                unit += (boxTypes[i][0] * boxTypes[i][1])
-                truckSize -= boxTypes[i][0]
+        for i in boxTypes:
+            if boxTypes[0] <= truckSize:
+                unit += (boxTypes[0] * boxTypes[1])
+                truckSize -= boxTypes[0]
 
             else:
-                unit += truckSize * boxTypes[i][1]
+                unit += truckSize * boxTypes[1]
                 truckSize = 0
 
         return unit
