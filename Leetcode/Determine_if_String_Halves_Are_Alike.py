@@ -12,6 +12,8 @@
 # 두 횟수가 같은 경우에 bool값 리턴해주면 끝.
 
 # 시간복잡도 : O(n) / 공간복잡도: O(1)
+# 공부 해야 할 과제 : split 내부 함수 로직 알아보기
+# 이거 포문 안쓰고 다시 풀기
 
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
