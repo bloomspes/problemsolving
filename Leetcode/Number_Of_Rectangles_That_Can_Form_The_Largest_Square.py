@@ -6,10 +6,5 @@
 
 class Solution:
     def countGoodRectangles(self, rectangles: List[List[int]]) -> int:
-        square = []
-        for i in rectangles:
-            square.append(min(i))
-
-        maximum = max(square)
-        ans = square.count(maximum)
-        return ans
+        square = [min(i) for i in rectangles]
+        return square.count(max(square))
